@@ -3,9 +3,9 @@
 a=0
 b=1
 numero= input("Escriba el número de fibbonaci que quiere ") 
-lista=range(numero)
+lista=range(int(numero))
 i=0
-while i<numero:
+for i in xrange(0, numero):
     if i == 0:
         a=0
         lista[i]=a
@@ -17,5 +17,4 @@ while i<numero:
         a=b
         b=c
         lista[i]=c
-    i+=1
-print lista
+print (lista)
