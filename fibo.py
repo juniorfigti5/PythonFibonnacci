@@ -4,17 +4,11 @@ a=0
 b=1
 numero= input("Escriba el número de fibbonaci que quiere ") 
 lista=range(int(numero))
-i=0
-for i in xrange(0, numero):
-    if i == 0:
-        a=0
-        lista[i]=a
-    elif i==1:
-        b=1
-        lista[i]=b
-    else:
-        c=a+b
-        a=b
-        b=c
-        lista[i]=c
+lista[0] = a
+lista[1] = b
+for i in xrange(2, numero):
+    c=a+b
+    a=b
+    b=c
+    lista[i]=c
 print (lista)
